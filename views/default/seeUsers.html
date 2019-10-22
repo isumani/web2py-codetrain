@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+{{if users:}}
+  {{for user in users:}}
+    <p>
+    First name is {{=user.db_firstname}} ,<br> Last name is
+    {{=user.db_lastname}},<br> email is {{=user.db_email}}<br>
+    </p>
+   {{pass}}
+{{else:}}
+  <h2>No Users Found</h2>
+{{pass}}

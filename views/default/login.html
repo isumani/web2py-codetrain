@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+<form action="{{=URL('authenticate')}}" method="post">
+<p>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email">
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password">
+    </div>
+
+     <div>
+        <input type="submit" value="Login">
+    </div>
+</p>
+</form>
